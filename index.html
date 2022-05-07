@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5a71057d37.js" crossorigin="anonymous"></script>
+    <title>Hi! It's CD here!</title>
+    <link rel="icon" type="image/x-icon" href="./images/hand-fist-solid.svg" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <ul>
+                <li>
+                    <a id="link" href="https://www.linkedin.com/in/diegocdts/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a id="link" href="https://github.com/diegodisouzza" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </li>
+                <li>
+                    <a id="link" href="https://www.instagram.com/diegocdts/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="about">
+            <section>
+                <div id="resume">
+                    <h4 class="resume__content">Hello world!</h4>
+                    <h2 class="resume__content">It's Cláudio Diego!</h2>
+                    <h3 class="resume__content">
+                        Systems Analyst and Front-end Developer
+                    </h3>
+                    <p class="resume__content">
+                        Systems Analyst, Master in Informatics and PhD Researcher in
+                        Systems Engineering and Computing from UFRJ. Work with survey,
+                        prioritization and specification of requirements, analysis and
+                        development of systems. Front-end developer with familiarity in
+                        web and mobile technologies and micro service integration.
+                    </p>
+                </div>
+                <div onclick="displayForm()" id="action">
+                    <h5>How about contacting me?</h5>
+                </div>
+                <div id="form">
+                    <input type="email" id="form__input" placeholder="What's your e-mail address?" />
+                    <div id="form__textareabutton">
+                        <textarea id="form__textarea" rows="10" cols="50" ,
+                            placeholder="Contact me by sending a message..."></textarea>
+
+                        <button id="form__button">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="footnote">
+            <i class="fa-solid fa-hand-fist"></i>
+        </div>
+    </div>
+</body>
+
+<script>
+    function displayForm() {
+        const action_div = document.getElementById("action");
+        action_div.classList.toggle("upAction");
+        const form = document.getElementById("form");
+        form.classList.toggle("show");
+    }
+</script>
+
+</html>
